@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SportFiteness - Loja de Esportes</title>
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background-color:#cfe8ff;
+}
+
+header{
+background:#0077cc;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#005fa3;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+padding:20px;
+}
+
+.section-title{
+font-size:25px;
+margin-top:30px;
+color:#003366;
+}
+
+.produtos{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.produto{
+background:white;
+padding:15px;
+border-radius:10px;
+width:250px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.produto img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.login{
+background:white;
+padding:20px;
+width:300px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+input{
+width:100%;
+padding:10px;
+margin-top:10px;
+}
+
+button{
+background:#0077cc;
+color:white;
+padding:10px;
+border:none;
+margin-top:10px;
+cursor:pointer;
+width:100%;
+}
+
+footer{
+background:#005fa3;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>SportFiteness</h1>
+<p>Sua loja completa de artigos esportivos</p>
+</header>
+
+<nav>
+<a href="#login">Login</a>
+<a href="#quadra">Produtos de Quadra</a>
+<a href="#diversos">Produtos Diversos</a>
+</nav>
+
+<div class="container">
+
+<section id="login">
+<h2 class="section-title">Área de Login</h2>
+
+<div class="login">
+<input type="text" placeholder="Usuário">
+<input type="password" placeholder="Senha">
+<button onclick="login()">Entrar</button>
+</div>
+
+</section>
+
+<section id="quadra">
+
+<h2 class="section-title">Produtos para Quadra</h2>
+
+<div class="produtos">
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1517649763962-0c623066013b">
+<h3>Bola de Futebol</h3>
+<p>Uso: Jogos de futebol</p>
+<p>Serve para: Treinos e partidas em campo ou quadra</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1519861531473-9200262188bf">
+<h3>Bola de Basquete</h3>
+<p>Uso: Jogos de basquete</p>
+<p>Serve para: Treinos e partidas em quadras</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf">
+<h3>Bola de Vôlei</h3>
+<p>Uso: Jogos de vôlei</p>
+<p>Serve para: Quadras internas e externas</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b">
+<h3>Rede de Vôlei</h3>
+<p>Uso: Instalação em quadra</p>
+<p>Serve para: Jogos oficiais e recreativos</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1">
+<h3>Cones de Treino</h3>
+<p>Uso: Treinamento esportivo</p>
+<p>Serve para: Exercícios de agilidade</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="diversos">
+
+<h2 class="section-title">Produtos Diversos</h2>
+
+<div class="produtos">
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+<h3>Garrafa Esportiva</h3>
+<p>Uso: Hidratação</p>
+<p>Serve para: Academia e esportes</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07d">
+<h3>Luvas de Academia</h3>
+<p>Uso: Proteção das mãos</p>
+<p>Serve para: Musculação</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1594737625785-cdf5f84f7f1a">
+<h3>Corda de Pular</h3>
+<p>Uso: Exercício cardio</p>
+<p>Serve para: Aquecimento e treino</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+<h3>Colchonete</h3>
+<p>Uso: Exercícios no chão</p>
+<p>Serve para: Academia e yoga</p>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1599058918144-1ffabb6ab9a0">
+<h3>Faixa Elástica</h3>
+<p>Uso: Treinamento funcional</p>
+<p>Serve para: Fortalecimento muscular</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+<p>SportFiteness © 2026 - Loja de Esportes</p>
+</footer>
+
+<script>
+
+function login(){
+alert("Login realizado com sucesso!");
+}
+
+</script>
+
+</body>
+</html>
