@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SportFiteness - Loja de Esportes</title>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background-color:#cfe8ff;
+}
+
+header{
+    background:#0077cc;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header img{
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+nav{
+    background:#005fa3;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#f0f0f0;
+}
+
+.container{
+    padding:20px;
+}
+
+.section-title{
+    font-size:25px;
+    margin-top:30px;
+    color:#003366;
+}
+
+.produtos{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:space-between;
+}
+
+.produto{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    width:250px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.produto img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.produto h3{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.produto p{
+    font-size:14px;
+    color:#555;
+}
+
+.produto .preco{
+    font-size:20px;
+    font-weight:bold;
+    color:#0077cc;
+}
+
+.login{
+    background:white;
+    padding:20px;
+    width:250px;
+    margin:auto;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+}
+
+button{
+    background:#0077cc;
+    color:white;
+    padding:10px;
+    border:none;
+    margin-top:10px;
+    cursor:pointer;
+    width:100%;
+}
+
+footer{
+    background:#005fa3;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@media (max-width: 768px) {
+    .produtos{
+        justify-content:center;
+    }
+    
+    .produto{
+        width:100%;
+        margin-bottom:20px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <!-- Adicionando logo aqui -->
+    <img src="https://your-logo-url.com/logo.png" alt="Logo SportFiteness">
+    <h1>SportFiteness</h1>
+    <p>Sua loja completa de artigos esportivos</p>
+</header>
+
+<nav>
+    <a href="#login">Login</a>
+    <a href="#quadra">Produtos de Quadra</a>
+    <a href="#diversos">Produtos Diversos</a>
+</nav>
+
+<div class="container">
+
+<section id="login">
+    <h2 class="section-title">Área de Login</h2>
+
+    <div class="login">
+        <!-- Adicionando campos de nome de usuário, email e senha -->
+        <input type="text" placeholder="Nome de Usuário">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+    </div>
+
+</section>
+
+<section id="quadra">
+    <h2 class="section-title">Produtos para Quadra</h2>
+
+    <div class="produtos">
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x180?text=Bola+de+Futebol" alt="Bola de Futebol">
+            <h3>Bola de Futebol</h3>
+            <p>Uso: Jogos de futebol</p>
+            <p>Serve para: Treinos e partidas em campo ou quadra</p>
+            <p class="preco">R$ 100,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x180?text=Bola+de+Basquete" alt="Bola de Basquete">
+            <h3>Bola de Basquete</h3>
+            <p>Uso: Jogos de basquete</p>
+            <p>Serve para: Treinos e partidas em quadras</p>
+            <p class="preco">R$ 120,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x180?text=Bola+de+Volei" alt="Bola de Vôlei">
+            <h3>Bola de Vôlei</h3>
+            <p>Uso: Jogos de vôlei</p>
+            <p>Serve para: Quadras internas e externas</p>
+            <p class="preco">R$ 80,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x180?text=Rede+de+Volei" alt="Rede de Vôlei">
+            <h3>Rede de Vôlei</h3>
+            <p>Uso: Instalação em quadra</p>
+            <p>Serve para: Jogos oficiais e recreativos</p>
+            <p class="preco">R$ 150,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x180?text=Cones+de+Treino" alt="Cones de Treino">
+            <h3>Cones de Treino</h3>
+            <p>Uso: Treinamento esportivo</p>
+            <p>Serve para: Exercícios de agilidade</p>
+            <p class="preco">R$ 30,00</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="diversos">
+
+    <h2 class="section-title">Produtos Diversos</h2>
+
+    <div class="produtos">
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x180?text=Garrafa+Esportiva" alt="Garrafa Esportiva">
+            <h3>Garrafa Esportiva</h3>
+            <p>Uso: Hidratação</p>
+            <p>Serve para: Academia e esportes</p>
+            <p class="preco">R$ 25,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x180?text=Luvas+de+Academia" alt="Luvas de Academia">
+            <h3>Luvas de Academia</h3>
+            <p>Uso: Proteção das mãos</p>
+            <p>Serve para: Musculação</p>
+            <p class="preco">R$ 50,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x180?text=Corda+de+Pular" alt="Corda de Pular">
+            <h3>Corda de Pular</h3>
+            <p>Uso: Exercício cardio</p>
+            <p>Serve para: Aquecimento e treino</p>
+            <p class="preco">R$ 40,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x180?text=Colchonete" alt="Colchonete">
+            <h3>Colchonete</h3>
+            <p>Uso: Exercícios no chão</p>
+            <p>Serve para: Academia e yoga</p>
+            <p class="preco">R$ 70,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x180?text=Faixa+Elastica" alt="Faixa Elástica">
+            <h3>Faixa Elástica</h3>
+            <p>Uso: Treinamento funcional</p>
+            <p>Serve para: Fortalecimento muscular</p>
+            <p class="preco">R$ 20,00</p>
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+<footer>
+    <p>SportFiteness © 2026 - Loja de Esportes</p>
+</footer>
+
+<script>
+function login(){
+    alert("Login realizado com sucesso!");
+}
+</script>
+
+</body>
+</html>
