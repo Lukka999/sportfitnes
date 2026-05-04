@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SportFiteness</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(#dbeeff,#b3daff);
+}
+
+/* HEADER */
+header{
+background:linear-gradient(90deg,#005fa3,#00aaff);
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* NAV */
+nav{
+background:#003366;
+color:white;
+padding:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+}
+
+#carrinho{
+background:#00aaff;
+padding:5px 10px;
+border-radius:10px;
+}
+
+/* LOGIN */
+.login{
+background:white;
+width:220px;
+margin:20px auto;
+padding:10px;
+border-radius:10px;
+text-align:center;
+}
+
+.login input{
+width:90%;
+margin:5px;
+padding:5px;
+}
+
+.login button{
+background:#0077cc;
+color:white;
+border:none;
+padding:7px;
+width:95%;
+}
+
+/* PRODUTOS */
+.container{
+padding:20px;
+}
+
+.produtos{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.produto{
+background:white;
+width:240px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+overflow:hidden;
+}
+
+.produto img{
+width:100%;
+height:160px;
+object-fit:cover;
+}
+
+.info{
+padding:10px;
+}
+
+button{
+background:#0077cc;
+color:white;
+border:none;
+padding:8px;
+margin-top:5px;
+cursor:pointer;
+width:100%;
+}
+
+/* ESTRELAS */
+.estrelas span{
+font-size:20px;
+cursor:pointer;
+color:gray;
+}
+
+.estrelas span.ativo{
+color:gold;
+}
+
+/* AVALIAÇÕES */
+.avaliacoes{
+font-size:12px;
+margin-top:5px;
+color:#333;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>SportFiteness</h1>
+<p>Loja esportiva moderna</p>
+</header>
+
+<nav>
+<div>
+<a href="#login">Login</a>
+<a href="#produtos">Produtos</a>
+</div>
+<div id="carrinho">Carrinho: 0</div>
+</nav>
+
+<!-- LOGIN -->
+<div class="login" id="login">
+<h3>Login</h3>
+<input placeholder="Usuário">
+<input type="password" placeholder="Senha">
+<button onclick="login()">Entrar</button>
+</div>
+
+<!-- PRODUTOS -->
+<div class="container" id="produtos">
+
+<div class="produtos">
+
+<!-- PRODUTO -->
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+<div class="info">
+<h3>Tênis Esportivo</h3>
+<p>Ideal para corrida e treino</p>
+
+<div class="estrelas">
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+</div>
+
+<div class="avaliacoes">
+<p>⭐ 5 - Muito confortável</p>
+<p>⭐ 4 - Bom custo</p>
+<p>⭐ 5 - Excelente</p>
+</div>
+
+<button onclick="comprar()">Comprar</button>
+</div>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1517649763962-0c623066013b">
+<div class="info">
+<h3>Bola de Futebol</h3>
+<p>Para jogos e treinos</p>
+
+<div class="estrelas">
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+</div>
+
+<div class="avaliacoes">
+<p>⭐ 5 - Ótima qualidade</p>
+<p>⭐ 4 - Resistente</p>
+</div>
+
+<button onclick="comprar()">Comprar</button>
+</div>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1519861531473-9200262188bf">
+<div class="info">
+<h3>Bola de Basquete</h3>
+<p>Uso em quadras</p>
+
+<div class="estrelas">
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+</div>
+
+<div class="avaliacoes">
+<p>⭐ 5 - Perfeita</p>
+<p>⭐ 4 - Boa pegada</p>
+</div>
+
+<button onclick="comprar()">Comprar</button>
+</div>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+<div class="info">
+<h3>Garrafa</h3>
+<p>Para hidratação</p>
+
+<div class="estrelas">
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+<span onclick="avaliar(this)">★</span>
+</div>
+
+<div class="avaliacoes">
+<p>⭐ 4 - Boa</p>
+<p>⭐ 5 - Excelente</p>
+</div>
+
+<button onclick="comprar()">Comprar</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
+
+let total = 0;
+
+function comprar(){
+total++;
+document.getElementById("carrinho").innerText = "Carrinho: " + total;
+alert("Produto adicionado ao carrinho!");
+}
+
+function login(){
+alert("Login realizado!");
+}
+
+function avaliar(elemento){
+let estrelas = elemento.parentNode.children;
+
+for(let i=0;i<estrelas.length;i++){
+estrelas[i].classList.remove("ativo");
+}
+
+for(let i=0;i<=Array.from(estrelas).indexOf(elemento);i++){
+estrelas[i].classList.add("ativo");
+}
+}
+
+</script>
+
+</body>
+</html>
